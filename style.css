@@ -1,0 +1,102 @@
+/* Centered layout */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Button colors */
+.set-btn {
+  background: #3498db;
+  color: white;
+}
+
+.reset-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.calculate-btn {
+  background: #2ecc71;
+  color: white;
+}
+
+/* Hover effects */
+.set-btn:hover {
+  background: #2980b9;
+}
+
+.reset-btn:hover {
+  background: #c0392b;
+}
+
+.calculate-btn:hover {
+  background: #27ae60;
+}
+
+.results-box {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 2px solid #3498db;
+}
+
+.score-card h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.final-score {
+  font-size: 24px;
+  color: #27ae60;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  margin: 15px 0;
+  border: 2px solid #27ae60;
+}

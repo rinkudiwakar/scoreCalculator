@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treasure Hunt Scoring</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Lost Circuit Scoring</h1>
+
+    <!-- Checkpoint Selection -->
+    <div class="input-group">
+      <label for="checkpoint">Select Checkpoint:</label>
+      <select id="checkpoint" class="form-control">
+        <option value="">Choose Checkpoint</option>
+      </select>
+    </div>
+
+    <!-- Max Time Display -->
+    <div class="info-box">
+      Maximum Time: <span id="maxTime">-</span> mins
+    </div>
+
+    <!-- Reference Time Section -->
+    <div class="input-group">
+      <label for="refTime">Reference Time (mins):</label>
+      <div class="input-row">
+        <input type="number" id="refTime" class="form-control">
+        <button onclick="setReferenceTime()" class="btn set-btn">Set</button>
+        <button onclick="resetReferenceTime()" class="btn reset-btn">Reset</button>
+      </div>
+      <div id="refStatus" class="status-box"></div>
+    </div>
+
+    <!-- Team Time Input -->
+    <div class="input-group">
+      <label for="teamTime">Team Time (mins):</label>
+      <div class="input-row">
+        <input type="number" id="teamTime" class="form-control">
+        <button onclick="calculateScore()" class="btn calculate-btn">Calculate</button>
+        <button onclick="resetTeamData()" class="btn reset-btn">Reset</button>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="results-box" id="results">
+      <div class="score-card">
+        <h3>Score Calculation</h3>
+        <div id="scoreContent"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
